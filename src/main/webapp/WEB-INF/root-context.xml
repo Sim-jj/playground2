@@ -25,16 +25,16 @@
           p:password="${PWD}" />
 
     <!-- myBatis : sqlSession -->
-    <bean id="sqlSessionFactory"
-          class="org.mybatis.spring.SqlSessionFactoryBean"
-          p:dataSource-ref="dbcpDataSource"
-          p:mapperLocations="classpath*:mybatis3/*Mapper.xml" />
+<!--    <bean id="sqlSessionFactory"-->
+<!--          class="org.mybatis.spring.SqlSessionFactoryBean"-->
+<!--          p:dataSource-ref="dbcpDataSource"-->
+<!--          p:mapperLocations="classpath*:mybatis3/*Mapper.xml" />-->
 
-    <!-- myBatis3 설정 #2 -->
-    <bean id="sqlSession"
-          class="org.mybatis.spring.SqlSessionTemplate">
-        <constructor-arg ref="sqlSessionFactory" index="0" />
-    </bean>
+<!--    &lt;!&ndash; myBatis3 설정 #2 &ndash;&gt;-->
+<!--    <bean id="sqlSession"-->
+<!--          class="org.mybatis.spring.SqlSessionTemplate">-->
+<!--        <constructor-arg ref="sqlSessionFactory" index="0" />-->
+<!--    </bean>-->
 
 
 </beans>
